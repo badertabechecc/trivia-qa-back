@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "users_histories",
+  "info": {
+    "name": "usersHistory",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question": {
+      "model": "questions"
+    },
+    "score": {
+      "type": "integer",
+      "required": true
+    },
+    "user": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
