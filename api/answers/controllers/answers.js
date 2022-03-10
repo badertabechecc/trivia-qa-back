@@ -9,8 +9,6 @@ module.exports = {
   async create(ctx) {
     const { userId, answerId, questionId } = ctx.request.body;
 
-    console.log(ctx.request.body);
-
     const { isCorrect } = await strapi.services.answers.findOne({
       id: answerId,
     });

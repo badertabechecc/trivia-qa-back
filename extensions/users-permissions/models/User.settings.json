@@ -76,6 +76,15 @@
     "questionsAsked": {
       "type": "json",
       "required": false
+    },
+    "linkedin": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
     }
   }
 }
